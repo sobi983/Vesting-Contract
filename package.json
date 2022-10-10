@@ -1,0 +1,23 @@
+{
+  "name": "vesting-contract-hardhat-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --watch test/Testing_Vesting.js --exec npx hardhat test",
+    "deploy_test":"nodemon --watch scripts/Testing_Localhost.js --exec npx hardhat run --network localhost ./scripts/Testing_Localhost.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "ethers": "^5.7.1",
+    "hardhat": "^2.11.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "nodemon": "^2.0.20"
+  }
+}
